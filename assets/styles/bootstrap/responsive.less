@@ -1,0 +1,578 @@
+/*!
+ * Foursquare Responsive Styles
+ *
+ * Created specially for Foursquare churches and customized from Twitter Bootstrap 2.0.
+ *
+ * Bootstrap Responsive v2.0.0
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+// Responsive.less
+// For phone and tablet devices
+// -------------------------------------------------------------
+
+
+// REPEAT VARIABLES & MIXINS
+// -------------------------
+// Required since we compile the responsive stuff separately
+
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
+
+// RESPONSIVE CLASSES
+// ------------------
+
+// Hide from screenreaders and browsers
+// Credit: HTML5 Boilerplate
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+// LARGE DESKTOP & UP
+// ------------------
+
+@media (min-width: 1200px) {
+
+  // Fixed grid
+  #gridSystem > .generate(12, 70px, 30px);
+
+  // Fluid grid
+  #fluidGridSystem > .generate(12, 5.982905983%, 2.564102564%);
+
+  // Input grid
+  #inputGridSystem > .generate(12, 70px, 30px);
+
+  // Thumbnails
+  .thumbnails {
+    margin-left: -30px;
+  }
+  .thumbnails > li {
+    margin-left: 30px;
+  }
+
+}
+
+// DEFAULT DESKTOP
+// ---------------
+
+@media (min-width: 980px) {
+  .nav-collapse.collapse {
+    height: auto !important;
+  }
+  .navbar-fixed-top .brand { display: none; }
+}
+
+// PORTRAIT TABLET TO DEFAULT DESKTOP
+// ----------------------------------
+
+@media (min-width: 768px) and (max-width: 980px) {
+
+  // Fixed grid
+  #gridSystem > .generate(12, 42px, 20px);
+
+  // Fluid grid
+  #fluidGridSystem > .generate(12, 5.801104972%, 2.762430939%);
+
+  // Input grid
+  #inputGridSystem > .generate(12, 42px, 20px);
+  
+  #footer-widgets {
+	hr { display: none; }
+	}
+
+}
+
+// TABLETS AND BELOW
+// -----------------
+@media (max-width: 980px) {
+
+  // UNFIX THE TOPBAR
+  // ----------------
+  // Remove any padding from the body
+  body {
+    padding-top: 0;
+  }
+  // Unfix the navbar
+  .navbar-fixed-top {
+    position: static;
+    margin-bottom: @baseLineHeight;
+  }
+  .navbar-fixed-top .navbar-inner {
+    padding: 5px;
+  }
+  .navbar .container {
+    width: auto;
+    padding: 0;
+  }
+  // Account for brand name
+  .navbar .brand {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 0 0 -5px;
+  }
+  // Nav collapse clears brand
+  .navbar .nav-collapse {
+    clear: left;
+  }
+  // Block-level the nav
+  .navbar .nav {
+    float: none;
+    margin: 0 0 (@baseLineHeight / 2);
+  }
+  .navbar .nav > li {
+    float: none;
+  }
+  .navbar .nav > li > a {
+    margin-bottom: 2px;
+  }
+  .navbar .nav > .divider-vertical {
+    display: none;
+  }
+  // Nav and dropdown links in navbar
+  .navbar .nav > li > a,
+  .navbar .dropdown-menu a {
+    padding: 6px 15px;
+    font-weight: bold;
+    color: @navbarLinkColor;
+    .border-radius(3px);
+  }
+  .navbar .dropdown-menu li + li a {
+    margin-bottom: 2px;
+  }
+  .navbar .nav > li > a:hover,
+  .navbar .dropdown-menu a:hover {
+    background-color: @navbarBackground;
+  }
+  // Dropdowns in the navbar
+  .navbar .dropdown-menu {
+    position: static;
+    top: auto;
+    left: auto;
+    float: none;
+    display: block;
+    max-width: none;
+    margin: 0 15px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    .border-radius(0);
+    .box-shadow(none);
+  }
+  .navbar .dropdown-menu:before,
+  .navbar .dropdown-menu:after {
+    display: none;
+  }
+  .navbar .dropdown-menu .divider {
+    display: none;
+  }
+  // Forms in navbar
+  .navbar-form,
+  .navbar-search {
+    float: none;
+    padding: (@baseLineHeight / 2) 15px;
+    margin: (@baseLineHeight / 2) 0;
+    border-top: 1px solid @navbarBackground;
+    border-bottom: 1px solid @navbarBackground;
+    @shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
+    .box-shadow(@shadow);
+  }
+  // Pull right (secondary) nav content
+  .navbar .nav.pull-right {
+    float: none;
+    margin-left: 0;
+  }
+  // Static navbar
+  .navbar-static .navbar-inner {
+    padding-left:  10px;
+    padding-right: 10px;
+  }
+  // Navbar button
+  .btn-navbar {
+    display: block;
+  }
+
+  // Hide everything in the navbar save .brand and toggle button */
+  .nav-collapse {
+    overflow: hidden;
+    height: 0;
+  }
+  // Decrease header margin
+  header { margin-top: 0; }
+  // Remove nasty space to the left.
+  #page, #blog, #about, #comments { margin-left: 0px; }
+  // Prevent drop downs in the sidebar from bleeding past the widget container
+  #sidebar select { width: 180px; }
+  // Calendar Styles
+  // Remove a lot of excessive navigation for smaller screens.
+  .tribe-events-calendar-buttons, 
+ 	.tribe-events-prev-month,
+ 	.tribe-events-next-month { display: none; }
+}
+
+// UP TO IPAD PORTRAIT
+// --------------------------------------------------
+
+@media (max-width: 768px) {
+  // GRID & CONTAINERS
+  // -----------------
+  // Remove width from containers
+  .container {
+    width: auto;
+    padding: 0 20px;
+  }
+  // Fluid rows
+  .row-fluid {
+    width: 100%;
+  }
+  // Undo negative margin on rows
+  .row {
+    margin-left: 0;
+  }
+  // Make all columns even
+  .row > [class*="span"],
+  .row-fluid > [class*="span"] {
+    float: none;
+    display: block;
+    width: auto;
+    margin: 0;
+  }
+  header {
+  	height: 25px;
+  	.logo-custom { text-align: center; }
+  	// Remove the Hebrews 13:8 slogan
+    .slogan { display: none !important; }
+  }
+  // Make the hero slider content more readable
+  #hero {
+  	margin-top: 75px !important;
+  	.flexslider-content {
+  		padding: 2% 6% !important;
+  		width: 88% !important;
+  	}
+  }
+  #content .info {
+  	width: 96%;
+  	iframe { width: 100%; }
+  }
+  #page, 
+  #blog { margin-left: 0; }
+  // Add some breathing room between the header and the page content
+  #page, #blog, #page-full, #sermons, #hero { margin-top: 80px; }
+  // Get rid of the sidebar
+  #sidebar { display: none; }
+  // Calendar tweaks
+  // Add breathing room between page title and content.
+  #tribe-events-content { margin-top: 45px; }
+  // Remove excessive header info from the header of an event post. 
+  #tribe-events-event-meta { display: none; } 
+  // Remove Back navigation since it interferes with content.
+  .back { display: none; }
+  // Sermon Styles
+  #sermons {
+  	.summary { 
+ 		display: block; 
+ 		float: none;
+ 		margin-left: 0px;
+ 		width: 90%;
+ 	}
+ 	.sermon-meta {
+ 		background: @grayLighter;
+ 		padding: 10px;
+ 		.series,
+ 		.speaker,
+ 		.date { margin-bottom: 10px !important; }
+  	}
+  }
+  // Footer styles
+  footer {
+  	.social { margin-top: 0; }
+  }
+  #footer-widgets {
+	li.widget-container { 
+		border-bottom: 1px solid @grayLighter;
+		margin-bottom: 25px; 
+		padding-bottom: 15px;
+		}
+	hr { display: none; }
+	}
+}
+
+
+// UP TO TYPICAL ANDROID LANDSCAPE
+// --------------------------------------------------
+
+@media (max-width: 515px) {
+	// Make the slider content readable in mobile
+	#hero {
+		.flexslider h1 { 
+			font-size: 18px;
+			letter-spacing: -1px;
+			line-height: 18px;
+		}
+		.flexslider p { font-size: 12px; } // Decrease font size of the blurb one pixel
+		.flexslider .btn-large { display: none; } // Remove that bulky button
+		.flex-direction-nav li a.prev, 
+		.flex-direction-nav li a.next { display: none; } // Remove the slider side controls
+	}
+	#page, #blog, #page-full, #sermons { margin-top: 60px; }
+	footer {
+		// Force the branding and copyright to the center
+		.copyright {
+			float: none;
+			margin: 0 0 10px -1px;
+			text-align: center;
+			width: 100%;
+		}
+		// Push social icons below the copyright
+		.social {
+			float: none;
+			margin-left: 175px; 
+		}
+	}
+}
+
+// UP TO IPHONE LANDSCAPE
+// ----------------------
+
+@media (max-width: 480px) {
+
+  // Smooth out the collapsing/expanding nav
+  .nav-collapse {
+    -webkit-transform: translate3d(0, 0, 0); // activate the GPU
+  }
+
+  // Block level the page header small tag for readability
+  .page-header h1 small {
+    display: block;
+    line-height: @baseLineHeight;
+  }
+
+  // Make span* classes full width
+  input[class*="span"],
+  select[class*="span"],
+  textarea[class*="span"],
+  .uneditable-input {
+    display: block;
+    width: 100%;
+    height: 28px; /* Make inputs at least the height of their button counterpart */
+    /* Makes inputs behave like true block-level elements */
+    -webkit-box-sizing: border-box; /* Older Webkit */
+       -moz-box-sizing: border-box; /* Older FF */
+        -ms-box-sizing: border-box; /* IE8 */
+            box-sizing: border-box; /* CSS3 spec*/
+  }
+  // But don't let it screw up prepend/append inputs
+  .input-prepend input[class*="span"],
+  .input-append input[class*="span"] {
+    width: auto;
+  }
+
+  // Update checkboxes for iOS
+  input[type="checkbox"],
+  input[type="radio"] {
+    border: 1px solid #ccc;
+  }
+
+  // Remove the horizontal form styles
+  .form-horizontal .control-group > label {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    text-align: left;
+  }
+  // Move over all input controls and content
+  .form-horizontal .controls {
+    margin-left: 0;
+  }
+  // Move the options list down to align with labels
+  .form-horizontal .control-list {
+    padding-top: 0; // has to be padding because margin collaspes
+  }
+  // Move over buttons in .form-actions to align with .controls
+  .form-horizontal .form-actions {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  // Modals
+  .modal {
+    position: absolute;
+    top:   10px;
+    left:  10px;
+    right: 10px;
+    width: auto;
+    margin: 0;
+    &.fade.in { top: auto; }
+  }
+  .modal-header .close {
+    padding: 10px;
+    margin: -10px;
+  }
+
+  // Carousel
+  .carousel-caption {
+    position: static;
+  }
+  #content .info { width: 93%; } // Tighten up the homepage map and services container to fit screen
+   #blog {
+ 		.featured-image img { display: none; }
+ 		.post-image img { width: 250px; }
+ 		.alignleft { margin-right: 0; }
+ 	}
+ 	// Sermon Styles
+ 	#sermons {
+ 	.summary { 
+ 		display: block; 
+ 		float: none;
+ 		margin-left: 0px;
+ 		width: 90%;
+ 		}
+ 	}
+ 	.sermon-meta {
+ 		background: @grayLighter;
+ 		padding: 10px;
+ 		.series,
+ 		.speaker,
+ 		.date { margin-bottom: 10px !important; }
+ 	}
+ 	// Footer styles
+  footer {
+  	.social { margin: 0 0 0 161px; }
+  }
+}
+
+
+// UP TO IPHONE PORTRAIT
+// ----------------------
+
+@media (max-width: 320px) {
+	header {
+		.logo h1 a {
+			background: none;
+			font-size: 25px;
+			letter-spacing: -1px;
+			margin-bottom: 0;
+			padding: 0;
+			text-shadow: 1px 1px 0 white, 2px 2px 0 rgba(0, 0, 0, 0.12);
+			text-align: center;
+		}
+	}
+	#hero { margin-top: 35px !important; }
+	#content {
+		.info { width: 89%; } // Tighten up the homepage map and services container to fit screen
+		.news img {
+			float: none;
+			width: 220px;
+		}
+	}
+	#page, #blog, #page-full, #sermons { 
+		margin-top: 40px; 
+		padding: 35px 15px;
+		.post-image { max-width: 89%; }	
+	}
+	// Give the staff list in the About sidebar some more real estate
+	#sidebar .staff, #sidebar-about .staff, #sidebar-sermon .staff { width: 100%; }
+	// Give the contact info for a staff member more breathing room in smaller spaces
+	#page .staff {
+		h1 { 
+			font-size: 30px;
+			line-height: 33px;
+			}
+		h2 {
+			font-size: 13px;
+			line-height: 15px;
+		}
+		img { max-width: 88%; }
+		.contact-meta { margin-top: 15px; }
+	}
+	// Decrease the padding for full-width page templates
+	#page-full, #sermons { padding: 35px 20px; }
+	// Sermons Styles
+	#sermons { 
+		h2 { 
+			font-size: 20px;
+			line-height: 22px;
+			margin-bottom: 15px;
+		}
+		.summary { 
+			width: 100%; 
+			img { max-width: 89%; } // Decrease thumbnail size for breathing room
+		}
+	}
+	// Decrease size of thumbnails in the sidebar
+	#sidebar article img,
+	#sidebar-about article img, 
+	#sidebar-sermon article img { max-width: 89%; }
+	// Force the social icons in the footer to center
+	footer {
+  		.social { margin: 0 0 0 81px; }
+  }
+}
+
+// UP TO TYPICAL ANDROID PORTRAIT
+// ------------------------------
+
+@media (max-width: 295px) {
+	// Increase the homepage blog feed thumbnails
+	#content {
+		.news img { width: 200px; }
+	}
+	// Reduce image width for widgets in the footer to prevent screen width from expanding
+	#footer-widgets img { max-width: 87%; }
+	// Scoot the footer social icons over to appear centered
+	footer {
+  		.social { margin: 0 0 0 67px; }
+	}
+}
+
+// UP TO JUNKY ANDROID PORTRAIT
+// ----------------------------
+
+@media (max-width: 240px) {
+	// Bring down the font size of Heading 1 across the site
+	h1 { font-size: 30px; }
+	// Hide 
+	// Reduce site title to help prevent longer names pushing the nab to two lines
+	.navbar .brand { font-size: 15px; }
+	// Make the slider go away altogether
+	#hero { display: none; }
+	// Reduce font size of homepage content container headlines to fit the space
+	#content {
+		margin-top: 20px;
+		h1 { font-size: 20px; }
+		.news img { display: none; }
+	}
+	#page, #blog, #page-full, #sermons { 
+		margin-top: 20px; 
+		.bottom-nav .btn { font-size: 10px; }
+		.post-image { max-width: 87%; }
+	}
+	// Remove staff member thumbnail from About sidebar
+	#sidebar .staff img, #sidebar-about .staff img, #sidebar-sermon .staff img { display: none; }
+	// Remove the social icons in the contact information for a staff member
+	#page .staff {
+		.contact-meta .email a,
+		.contact-meta .phone p,
+		.contact-meta .facebook a,
+		.contact-meta .twitter a{ 
+			background: none;
+			padding: 0;
+		}
+	}
+	// Sermon Styles
+	#sermons {
+		form { display: none; } // Remove filter-by-topic navigation from sermon page
+	}
+	#page iframe, .video-js { display: none; } // Hide video content
+	// Scoot the footer social icons over to appear centered
+	footer {
+  		.social { margin: 0 0 0 41px; }
+	}
+}

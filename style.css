@@ -1,0 +1,12 @@
+/*
+Theme Name: Foursquare Two
+Theme URI: http://foursquare.org
+Description: A custom Wordpress theme for local Foursquare churches.
+Version: 1.0
+Author: The Foursquare Church
+Author URI: http://foursquare.org
+Tags: clean, responsive, bootstrap, custom-options
+*/
+
+@import "assets/styles/foursquare.css";
+
