@@ -178,7 +178,7 @@ header {
 	.logo-custom { margin-bottom: 30px; }
 	.slogan { 
 	      color: @blueDarkest;
-	      margin-top: 15px;
+	      margin: 15px 0 0 -15px;
 	      text-align: right;
 		  font-family: @fontDisplayLight;
 		  font-size: @baseFontSize + 2;
@@ -348,12 +348,14 @@ ul.nav ul li ul li:hover ul {
 // Homepage Hero Styles
 #hero {
 	background: #fff;
+	padding: 13px;
+	width: 94%;
 	.box-shadow;  
-	.imageBorder;
 	margin-bottom: 30px;
 	// FlexSlider Styles
 	.flexslider {
-		position: relative; 
+		position: relative;
+		width: 100%;
 		.slides  li { position: relative; }
 		.flexslider-container { position: relative; }
 		.slides img { max-width: 100%; }
@@ -411,6 +413,7 @@ ul.nav ul li ul li:hover ul {
 	}
 	.info {
 		background: url(../images/bg-topborder.gif) top no-repeat @white;
+		min-height: 460px;
 		.border-radius;
 		.box-shadow;
 		float: left;
@@ -437,8 +440,28 @@ ul.nav ul li ul li:hover ul {
 	margin-bottom: 30px;
 	padding: 35px 50px;
 	// Calendar Styles
-	// Push view option buttons up a notch
-	.tribe-events-calendar-buttons { top: -7px; }
+	table.em-calendar {
+		td.eventful a, table.em-calendar td.eventful-today a { color: @linkColor; }
+		td.eventless-today { background-color: @grayLighter; }
+	}
+	table.fullcalendar {
+		tr.days-names { 
+			background: @grayLighter; 
+			td { 
+				height: 15px;
+				text-align: center; 
+			}
+		}
+		td.month_name { 
+			text-align: center; 
+			vertical-align: middle;
+		}
+		td { 
+			border: 1px solid #eaeaea;
+			color: @blueDarkest;
+			font-family: @fontDisplayLight;
+		}
+	}
 }
 
 // The container for our default page content. Splits its width with the sidebar.
