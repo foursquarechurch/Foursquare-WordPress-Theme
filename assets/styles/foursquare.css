@@ -8099,6 +8099,9 @@ footer img {
   .navbar-fixed-top .brand {
     display: none;
   }
+  #hero {
+    width: 95%;
+  }
 }
 @media (min-width: 768px) and (max-width: 980px) {
   .row {
@@ -8763,6 +8766,9 @@ footer img {
   header {
     margin-top: 0;
   }
+  #hero {
+    width: 95%;
+  }
   #page,
   #blog,
   #about,
@@ -8807,6 +8813,7 @@ footer img {
   }
   #hero {
     margin-top: 75px !important;
+    width: 96%;
   }
   #hero .flexslider-content {
     padding: 2% 6% !important;
@@ -8904,6 +8911,9 @@ footer img {
 @media (max-width: 480px) {
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
+  }
+  #hero {
+    width: 94%;
   }
   .page-header h1 small {
     display: block;
@@ -9018,6 +9028,7 @@ footer img {
   }
   #hero {
     margin-top: 35px !important;
+    width: 90%;
   }
   #content .info {
     width: 89%;

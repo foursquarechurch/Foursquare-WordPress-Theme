@@ -67,6 +67,8 @@
     height: auto !important;
   }
   .navbar-fixed-top .brand { display: none; }
+  // Even out the flex slider width to the rest of the page content
+  #hero { width: 95%; }
 }
 
 // PORTRAIT TABLET TO DEFAULT DESKTOP
@@ -205,6 +207,8 @@
   }
   // Decrease header margin
   header { margin-top: 0; }
+  // Even out the flex slider width to the rest of the page content
+  #hero { width: 95%; }
   // Remove nasty space to the left.
   #page, #blog, #about, #comments { margin-left: 0px; }
   // Prevent drop downs in the sidebar from bleeding past the widget container
@@ -252,6 +256,7 @@
   // Make the hero slider content more readable
   #hero {
   	margin-top: 75px !important;
+  	width: 96%;
   	.flexslider-content {
   		padding: 2% 6% !important;
   		width: 88% !important;
@@ -347,6 +352,9 @@
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0); // activate the GPU
   }
+  
+  // Even out the flex slider width to the rest of the page content
+  #hero { width: 94%; }
 
   // Block level the page header small tag for readability
   .page-header h1 small {
@@ -464,7 +472,10 @@
 			text-align: center;
 		}
 	}
-	#hero { margin-top: 35px !important; }
+	#hero { 
+		margin-top: 35px !important;
+		width: 90%;
+	}
 	#content {
 		.info { width: 89%; } // Tighten up the homepage map and services container to fit screen
 		.news img {
