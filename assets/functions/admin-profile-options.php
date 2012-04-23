@@ -29,16 +29,23 @@ function my_show_extra_profile_fields( $user ) { ?>
 			</td>
 		</tr>       
         <tr>
-			<th><label for="twitter">Facebook</label></th>
+			<th><label for="facebook">Facebook</label></th>
 			<td>
 				<input type="text" name="facebook" id="facebook" value="<?php echo esc_attr( get_the_author_meta( 'facebook', $user->ID ) ); ?>" class="regular-text" /><br />
 				<span class="description">Please enter your Facebook URL.</span>
 			</td>
 		</tr>
-			<th><label for="twitter">Google+</label></th>
+			<th><label for="googleplus">Google+</label></th>
 			<td>
 				<input type="text" name="googleplus" id="googleplus" value="<?php echo esc_attr( get_the_author_meta( 'googleplus', $user->ID ) ); ?>" class="regular-text" /><br />
 				<span class="description">Please enter your Google+ URL.</span>
+			</td>
+		</tr>
+		</tr>
+			<th><label for="pinterest">Pinterest</label></th>
+			<td>
+				<input type="text" name="pinterest" id="pinterest" value="<?php echo esc_attr( get_the_author_meta( 'pinterest', $user->ID ) ); ?>" class="regular-text" /><br />
+				<span class="description">Please enter your Pinterest username.</span>
 			</td>
 		</tr>
 	</table>
@@ -58,5 +65,6 @@ update_usermeta( $user_id, 'job', $_POST['job'] );
 update_usermeta( $user_id, 'twitter', $_POST['twitter'] );
 update_usermeta( $user_id, 'facebook', $_POST['facebook'] );
 update_usermeta( $user_id, 'googleplus', $_POST['googleplus'] );
+update_usermeta( $user_id, 'pinterest', $_POST['pinterest'] );
 }
 ?>

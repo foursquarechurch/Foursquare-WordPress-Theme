@@ -686,7 +686,7 @@
   }
   footer .social {
     float: none;
-    margin-left: 175px;
+    margin-left: 157px;
   }
 }
 @media (max-width: 480px) {
@@ -794,7 +794,7 @@
     margin-bottom: 10px !important;
   }
   footer .social {
-    margin: 0 0 0 161px;
+    margin: 0 0 0 140px;
   }
 }
 @media (max-width: 320px) {
@@ -874,7 +874,7 @@
     display: none;
   }
   footer .social {
-    margin: 0 0 0 81px;
+    margin: 0 0 0 60px;
   }
 }
 @media (max-width: 295px) {
@@ -885,7 +885,7 @@
     max-width: 87%;
   }
   footer .social {
-    margin: 0 0 0 67px;
+    margin: 0 0 0 50px;
   }
 }
 @media (max-width: 240px) {
@@ -945,6 +945,6 @@
     display: none;
   }
   footer .social {
-    margin: 0 0 0 41px;
+    margin: 0 0 0 20px;
   }
 }

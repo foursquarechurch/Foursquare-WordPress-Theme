@@ -46,6 +46,12 @@
         	<a href="http://twitter.com/<?php the_author_meta( 'twitter',1); ?>">Twitter</a>
     	</div>
     	<?php } // End check for twitter ?>
+    	
+    	<?php if ( get_the_author_meta( 'pinterest',1) ) { ?>
+    	<div class="pinterest">
+        	<a href="http://pinterest.com/<?php the_author_meta( 'pinterest',1); ?>">Pinterest</a>
+    	</div>
+    	<?php } // End check for interest ?>
 	</div><!--end social-->
 	</div>
 </footer>

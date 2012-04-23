@@ -7224,6 +7224,16 @@ footer .social .twitter a {
   margin: 0 20px 0 0;
   width: 25px;
 }
+footer .social .pinterest,
+footer .social .pinterest a {
+  float: left;
+  overflow: hidden;
+  text-indent: 9999px;
+  background: url(../images/sprite-social.gif) no-repeat 0 -75px;
+  height: 25px;
+  margin: 0 20px 0 0;
+  width: 25px;
+}
 footer a {
   color: #2e3e5c;
 }
@@ -8905,7 +8915,7 @@ footer img {
   }
   footer .social {
     float: none;
-    margin-left: 175px;
+    margin-left: 157px;
   }
 }
 @media (max-width: 480px) {
@@ -9013,7 +9023,7 @@ footer img {
     margin-bottom: 10px !important;
   }
   footer .social {
-    margin: 0 0 0 161px;
+    margin: 0 0 0 140px;
   }
 }
 @media (max-width: 320px) {
@@ -9093,7 +9103,7 @@ footer img {
     display: none;
   }
   footer .social {
-    margin: 0 0 0 81px;
+    margin: 0 0 0 60px;
   }
 }
 @media (max-width: 295px) {
@@ -9104,7 +9114,7 @@ footer img {
     max-width: 87%;
   }
   footer .social {
-    margin: 0 0 0 67px;
+    margin: 0 0 0 50px;
   }
 }
 @media (max-width: 240px) {
@@ -9164,6 +9174,6 @@ footer img {
     display: none;
   }
   footer .social {
-    margin: 0 0 0 41px;
+    margin: 0 0 0 20px;
   }
 }
