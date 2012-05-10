@@ -8,12 +8,6 @@ Special hat tip to the team at Twitter for creating [Bootstrap](http://twitter.g
 
 Demo: http://foursquare.bethouawesome.com
 
-## Installation & Basic Setup
-
-This theme requires WordPress 3.0 or above. If you're new to WordPress it's pretty awesome, but does require little technical know-how. [Visit the WordPress website](http://codex.wordpress.org/Installing_WordPress) for instructions on how to get it up and running.
-
-This repository includes all the theme files necessary to hit the ground running. To install, simply download the latest release and upload the ZIP file directly to your /wp-content/themes folder and select the theme from your WordPress dashboard (under Appearance > Themes). 
-
 ## Features
 
 ### Responsive design
@@ -55,6 +49,10 @@ Includes popular plugins Contact Form 7 and Events Manager for easy contact form
 ### Built on LESS
 Pure vanilla CSS is nice, but if you're into preprocessors, we've packaged in [all the LESS files](http://lesscss.org/) with included variables, nesting, operations and mixins to make your development a little faster and more fun. 
 
+## Known Issues
+
+* Calendar header: In Calendar View, the navigation form that sits on top of the Calendar page becomes misaligned when no upcoming events are published in a given month. This is due to a bug with The Events Calendar plugin, which has been noted with the developer and will be worked into a future release of the plugin. In the meantime, the simple fix is to default the calendar view to List under Settings > The Event Calendar. Otherwise, there must be at least one event published for each month. 
+
 ## Installation & Basic Setup
 
 Clone the git repo - `git@github.com:foursquarechurch/Foursquare-WordPress-Theme.git` - or [download the latest release](http://www.foursquare.org/wptheme).
@@ -64,10 +62,6 @@ This theme requires WordPress 3.0 or above. [Visit the WordPress website](http:/
 This repository includes all the theme files necessary to hit the ground running, assuming you are already set up on WordPress. To install, simply download the latest release and upload the ZIP file directly to your /wp-content/themes folder and select the theme from your WordPress dashboard (under Appearance > Themes). 
 
 Please note that this theme relies on a few plugins for certain features to work properly and comes bundled with the files you need. You will be prompted to activate the plugins once the theme has been activated.
-
-## Known Issues
-
-* Calendar header: In Calendar View, the navigation form that sits on top of the Calendar page becomes misaligned when no upcoming events are published in a given month. This is due to a bug with The Events Calendar plugin, which has been noted with the developer and will be worked into a future release of the plugin. In the meantime, the simple fix is to default the calendar view to List under Settings > The Event Calendar. Otherwise, there must be at least one event published for each month. 
 
 ## Customizing the Appearance
 
