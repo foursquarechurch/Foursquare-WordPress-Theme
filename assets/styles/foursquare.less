@@ -442,9 +442,12 @@ ul.nav ul li ul li:hover ul {
 	padding: 35px 50px;
 	// Calendar Styles
 	table.em-calendar {
-		td.eventful a, table.em-calendar td.eventful-today a { color: @linkColor; }
+		td.eventful a, 
+		table.em-calendar td.eventful-today a { color: @linkColor; }
 		td.eventless-today { background-color: @grayLighter; }
 	}
+	.single-tribe_venue .upcoming .entry-title, 
+	h2.entry-title { font-size: 27px; }
 	table.fullcalendar {
 		tr.days-names { 
 			background: @grayLighter; 
@@ -646,8 +649,7 @@ ul.nav ul li ul li:hover ul {
 // LOGOS BIBLE REFERECE STYLES (js referenced in footer.php)
 //------------------------------------------------------------------------------
 
-.lbsTooltip
-{
+.lbsTooltip {
 	background:@white;
 	border: 1px solid @grayLighter;
 	z-index: 99;
@@ -655,13 +657,9 @@ ul.nav ul li ul li:hover ul {
 	text-indent: 0;
 }
 
-.lbsTooltip div
-{
-	text-align: left;
-}
+.lbsTooltip div { text-align: left; }
 
-.lbsTooltipHeader
-{
+.lbsTooltipHeader {
 	background:@grayLighter;
 	color: @blueDarkest;
 	font-size:15px;
@@ -673,8 +671,7 @@ ul.nav ul li ul li:hover ul {
 	border: 0;
 }
 
-.lbsTooltipBody 
-{
+.lbsTooltipBody {
 	padding: 4px 8px 0 8px;
 	margin:0;
 	position:relative;
@@ -683,8 +680,8 @@ ul.nav ul li ul li:hover ul {
 	line-height:16px;
 }
 
-.lbsTooltipBody p, .lbsTooltipBody span
-{
+.lbsTooltipBody p, 
+.lbsTooltipBody span {
 	display: inline;
 	color: @gray;
 	font-family:@baseFontFamily;
@@ -692,8 +689,7 @@ ul.nav ul li ul li:hover ul {
 	line-height:16px;
 }
 
-.lbsTooltipFooter
-{
+.lbsTooltipFooter {
 	font-size:11px;
 	font-family:@baseFontFamily;
 	bottom:4px;
@@ -703,8 +699,9 @@ ul.nav ul li ul li:hover ul {
 	border: 0;
 }
 
-.lbsTooltipFooter a:link, .lbsTooltipFooter a:visited, .lbsTooltipFooter a:hover 
-{
+.lbsTooltipFooter a:link, 
+.lbsTooltipFooter a:visited, 
+.lbsTooltipFooter a:hover {
 	color: blue;
 	text-decoration: underline;
 	font-weight: normal;
@@ -712,31 +709,24 @@ ul.nav ul li ul li:hover ul {
 	font-family:@baseFontFamily;
 }
 
-.lbsTooltipFooter div
-{
-	text-align:right;
-}
+.lbsTooltipFooter div { text-align:right; }
 
 
-.lbsTooltipBody .ch-ref, .lbsTooltipBody .verse-ref
-{
+.lbsTooltipBody .ch-ref, 
+.lbsTooltipBody .verse-ref {
 	font-size: 85%;
 	top: -1px;
 	position: relative;
 }
 
-.lbsTooltipBody .ch-ref
-{
-	font-weight: bold;
-}
+.lbsTooltipBody .ch-ref { font-weight: bold; }
 
-.lbsTooltipBody .verse-ref
-{
-	color: dimgray;
-}
+.lbsTooltipBody .verse-ref { color: dimgray; }
 
-.lbsTooltip, .lbsTooltipBody span, .lbsTooltip a, .lbsTooltipBody p
-{
+.lbsTooltip, 
+.lbsTooltipBody span, 
+.lbsTooltip a, 
+.lbsTooltipBody p {
 	margin: 0;
 	padding: 0;
 }

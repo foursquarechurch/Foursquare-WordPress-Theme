@@ -5854,6 +5854,12 @@ ul.nav ul li ul li:hover ul {
 #sermons table.em-calendar td.eventless-today {
   background-color: #eeeeee;
 }
+#page-full .single-tribe_venue .upcoming .entry-title,
+#sermons .single-tribe_venue .upcoming .entry-title,
+#page-full h2.entry-title,
+#sermons h2.entry-title {
+  font-size: 27px;
+}
 #page-full table.fullcalendar tr.days-names,
 #sermons table.fullcalendar tr.days-names {
   background: #eeeeee;

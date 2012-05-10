@@ -178,9 +178,9 @@ function my_theme_register_required_plugins() {
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
 		),
 		array(
-			'name'     				=> 'Events Manager', // The plugin name
-			'slug'     				=> 'events-manager', // The plugin slug (typically the folder name)
-			'source'   				=> get_stylesheet_directory() . '/assets/plugins/events-manager.zip', // The plugin source
+			'name'     				=> 'The Events Calendar', // The plugin name
+			'slug'     				=> 'the-events-calendar', // The plugin slug (typically the folder name)
+			'source'   				=> get_stylesheet_directory() . '/assets/plugins/the-events-calendar.zip', // The plugin source
 			'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
 			'version' 				=> '', // E.g. 1.0.0. If set, the active plugin must be this version or higher
 			'force_activation' 		=> true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
