@@ -49,10 +49,6 @@ Includes popular plugins Contact Form 7 and Events Manager for easy contact form
 ### Built on LESS
 Pure vanilla CSS is nice, but if you're into preprocessors, we've packaged in [all the LESS files](http://lesscss.org/) with included variables, nesting, operations and mixins to make your development a little faster and more fun. 
 
-## Known Issues
-
-* Calendar header: In Calendar View, the navigation form that sits on top of the Calendar page becomes misaligned when no upcoming events are published in a given month. This is due to a bug with The Events Calendar plugin, which has been noted with the developer and will be worked into a future release of the plugin. In the meantime, the simple fix is to default the calendar view to List under Settings > The Event Calendar. Otherwise, there must be at least one event published for each month. 
-
 ## Installation & Basic Setup
 
 Clone the git repo - `git@github.com:foursquarechurch/Foursquare-WordPress-Theme.git` - or [download the latest release](http://www.foursquare.org/wptheme).
