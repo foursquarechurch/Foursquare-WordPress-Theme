@@ -65,6 +65,10 @@ This repository includes all the theme files necessary to hit the ground running
 
 Please note that this theme relies on a few plugins for certain features to work properly and comes bundled with the files you need. You will be prompted to activate the plugins once the theme has been activated.
 
+## Known Issues
+
+* Calendar header: In Calendar View, the navigation form that sits on top of the Calendar page becomes misaligned when no upcoming events are published in a given month. This is due to a bug with The Events Calendar plugin, which has been noted with the developer and will be worked into a future release of the plugin. In the meantime, the simple fix is to default the calendar view to List under Settings > The Event Calendar. Otherwise, there must be at least one event published for each month. 
+
 ## Customizing the Appearance
 
 This theme allows you to adjust the design and choose from several settings to tailor it to your needs. Log into your WordPress dashboard to customize your settings.
@@ -80,12 +84,7 @@ Navigate to this tab to customize the following settings:
 * Google Analytics (enter your ID to easily integrate Google Analytics to your site)
 
 ### Homepage Slider
-Access this tab to upload and edit as many images that you want to rotate on the homepage as you would like.
-
-### Header
-This theme supports the built-in WordPress header feature (under Appearance > Header) that allows you to upload a custom logo that displays at the top of the site. By default, your site's name will be displayed if no image is uploaded.
-
-This bad boy controls the rotating images on the theme's homepage. Upload an image to your Media Library and paste the URL to it in the Homepage Slider to this tab. You can add as many images and URLs as you like and customize the transition animation and speed. 
+Access this tab to upload and edit as many images that you want to rotate on the homepage as you would like. This bad boy controls the rotating images on the theme's homepage. Upload an image to your Media Library and paste the URL to it in the Homepage Slider to this tab. You can add as many images and URLs as you like and customize the transition animation and speed. 
 
 ### Header
 This theme supports the built-in WordPress header feature (under Appearance > Header) that allows you to upload a custom logo that displays at the top of the site. By default, your site's name will be displayed if no image is uploaded.
