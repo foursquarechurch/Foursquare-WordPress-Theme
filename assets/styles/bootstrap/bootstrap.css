@@ -293,20 +293,6 @@ a:hover {
   font-style: normal;
 }
 @font-face {
-  font-family: 'MyriadProSemibold';
-  src: url('../fonts/myriadpro-semibold-webfont.eot');
-  src: url('../fonts/myriadpro-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/myriadpro-semibold-webfont.woff') format('woff'), url('../fonts/myriadpro-semibold-webfont.ttf') format('truetype'), url('../fonts/myriadpro-semibold-webfont.svg#MyriadProSemibold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'MyriadProRegular';
-  src: url('../fonts/myriadpro-regular-webfont.eot');
-  src: url('../fonts/myriadpro-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/myriadpro-regular-webfont.woff') format('woff'), url('../fonts/myriadpro-regular-webfont.ttf') format('truetype'), url('../fonts/myriadpro-regular-webfont.svg#MyriadProRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: 'MyriadProBold';
   src: url('../fonts/myriadpro-bold-webfont.eot');
   src: url('../fonts/myriadpro-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/myriadpro-bold-webfont.woff') format('woff'), url('../fonts/myriadpro-bold-webfont.ttf') format('truetype'), url('../fonts/myriadpro-bold-webfont.svg#MyriadProBold') format('svg');
@@ -336,7 +322,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "MyriadProRegular", Helvetica, Arial, sans-serif;
+  font-family: "MyriadProLight", Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: #2e3e5c;
   text-rendering: optimizelegibility;
@@ -373,14 +359,14 @@ h2 small {
   line-height: 20px;
 }
 h3 {
-  font-family: "MyriadProRegular", Helvetica, Arial, sans-serif;
+  font-family: "MyriadProLight", Helvetica, Arial, sans-serif;
   line-height: 27px;
   font-size: 16px;
   letter-spacing: -1px;
   text-transform: uppercase;
 }
 h3 small {
-  font-family: "MyriadProRegular", Helvetica, Arial, sans-serif;
+  font-family: "MyriadProLight", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 h4,

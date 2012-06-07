@@ -8,6 +8,12 @@ Special hat tip to the team at Twitter for creating [Bootstrap](http://twitter.g
 
 Demo: http://foursquare.bethouawesome.com
 
+## Installation & Basic Setup
+
+This theme requires WordPress 3.0 or above. If you're new to WordPress it's pretty awesome, but does require little technical know-how. [Visit the WordPress website](http://codex.wordpress.org/Installing_WordPress) for instructions on how to get it up and running.
+
+This repository includes all the theme files necessary to hit the ground running. To install, simply download the latest release and upload the ZIP file directly to your /wp-content/themes folder and select the theme from your WordPress dashboard (under Appearance > Themes). 
+
 ## Features
 
 ### Responsive design
@@ -74,7 +80,12 @@ Navigate to this tab to customize the following settings:
 * Google Analytics (enter your ID to easily integrate Google Analytics to your site)
 
 ### Homepage Slider
-Access this tab to upload and edit as many images that you want to rotate on the homepage as you would like. This bad boy controls the rotating images on the theme's homepage. Upload an image to your Media Library and paste the URL to it in the Homepage Slider to this tab. You can add as many images and URLs as you like and customize the transition animation and speed. 
+Access this tab to upload and edit as many images that you want to rotate on the homepage as you would like.
+
+### Header
+This theme supports the built-in WordPress header feature (under Appearance > Header) that allows you to upload a custom logo that displays at the top of the site. By default, your site's name will be displayed if no image is uploaded.
+
+This bad boy controls the rotating images on the theme's homepage. Upload an image to your Media Library and paste the URL to it in the Homepage Slider to this tab. You can add as many images and URLs as you like and customize the transition animation and speed. 
 
 ### Header
 This theme supports the built-in WordPress header feature (under Appearance > Header) that allows you to upload a custom logo that displays at the top of the site. By default, your site's name will be displayed if no image is uploaded.
