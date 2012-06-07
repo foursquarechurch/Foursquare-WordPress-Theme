@@ -3,7 +3,7 @@
  * The sidebar for our Contact page.
  *
  * We'll display entries from the Staff post type so visitors 
- * have another way to directly get in touch with any staff member.
+ * have another way to directly get in touh with any staff member.
  *
  * @package WordPress
  * @subpackage Foursquare Two
