@@ -95,7 +95,7 @@ This theme supports the built-in WordPress header feature (under Appearance > He
 As previously mentioned, this theme includes a few plugins that are integral to some key features on the site. These are noted below. To learn more about creating and managing content with each plugin, please refer to its website.
 
 * [Contact Form 7](http://contactform7.com/)
-* [Events Manager](http://wordpress.org/extend/plugins/events-manager/)
+* [The Events Calendar](http://wordpress.org/extend/plugins/the-events-calendar/)
 
 In addition, this theme includes two custom plugins:
 
