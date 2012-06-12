@@ -32,8 +32,8 @@ array( "name" => "What background would you like?",
 	"desc" => "Select the background of your website.",
 	"id" => $shortname."_background",
 	"type" => "select",
-	"options" => array("canvas", "chalkboard", "linen", "wood"),
-	"std" => "canvas"), 
+	"options" => array("burlap", "chalkboard", "linen", "wood"),
+	"std" => "linen"), 
 
 // Google Map integration
 array( "type" => "close"), 
