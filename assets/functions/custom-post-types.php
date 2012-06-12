@@ -16,9 +16,9 @@ if ( ! function_exists( 'fs_add_staff' ) ) {
 	
 		// "Staff" Custom Post Type
 		$labels = array(
-			'name' => _x( 'Staff', 'post type general name' ),
+			'name' => __( 'Staff', 'post type general name' ),
 			'singular_name' => _x( 'Staff', 'post type singular name' ),
-			'add_new' => _x( 'Add New' ),
+			'add_new' => __( 'Add New' ),
 			'add_new_item' => __( 'Add New Staff Member' ),
 			'edit_item' => __( 'Edit Staff Member' ),
 			'new_item' => __( 'New Staff Member' ),
@@ -48,8 +48,8 @@ if ( ! function_exists( 'fs_add_staff' ) ) {
 		
 		// "Staff Title" Custom Taxonomy. Designates a staff member's title
 		$labels = array(
-			'name' => _x( 'Church Staff Title', 'taxonomy general name' ),
-			'singular_name' => _x( 'Church Staff Title', 'taxonomy singular name' ),
+			'name' => __( 'Church Staff Title', 'taxonomy general name' ),
+			'singular_name' => __( 'Church Staff Title', 'taxonomy singular name' ),
 			'search_items' =>  __( 'Church Staff Title' ),
 			'all_items' => __( 'All Church Staff Titles' ),
 			'parent_item' => __( 'Parent Church Staff' ),
@@ -151,9 +151,9 @@ if ( ! function_exists( 'fs_add_sermons' ) ) {
 	
 		// "Sermons" Custom Post Type
 		$labels = array(
-			'name' => _x( 'Sermons', 'post type general name' ),
+			'name' => __( 'Sermons', 'post type general name' ),
 			'singular_name' => _x( 'Sermon', 'post type singular name' ),
-			'add_new' => _x( 'Add New' ),
+			'add_new' => __( 'Add New' ),
 			'add_new_item' => __( 'Add New Sermon' ),
 			'edit_item' => __( 'Edit Sermon' ),
 			'new_item' => __( 'New Sermon' ),
@@ -186,8 +186,8 @@ if ( ! function_exists( 'fs_add_sermons' ) ) {
 		
 		// "Series" Custom Taxonomy. Allows sermons to be grouped together if they are in a series.
 		$labels = array(
-			'name' => _x( 'Series', 'taxonomy general name' ),
-			'singular_name' => _x( 'Series', 'taxonomy singular name' ),
+			'name' => __( 'Series', 'taxonomy general name' ),
+			'singular_name' => __( 'Series', 'taxonomy singular name' ),
 			'search_items' =>  __( 'Series' ),
 			'all_items' => __( 'All Series' ),
 			'parent_item' => __( 'Parent Series' ),
@@ -211,8 +211,8 @@ if ( ! function_exists( 'fs_add_sermons' ) ) {
 		
 		// "Sermon Speaker" Custom Taxonomy. Designates a speaker for a particular sermon post.
 		$labels = array(
-			'name' => _x( 'Sermon Speaker', 'taxonomy general name' ),
-			'singular_name' => _x( 'Sermon Speaker', 'taxonomy singular name' ),
+			'name' => __( 'Sermon Speaker', 'taxonomy general name' ),
+			'singular_name' => __( 'Sermon Speaker', 'taxonomy singular name' ),
 			'search_items' =>  __( 'Sermon Speaker' ),
 			'all_items' => __( 'All Sermon Speakers' ),
 			'parent_item' => __( 'Parent Sermon Speaker' ),
@@ -236,8 +236,8 @@ if ( ! function_exists( 'fs_add_sermons' ) ) {
 		
 		// "Topics" Custom Taxonomy. Designates central topic for a particular sermon post.
 		$labels = array(
-			'name' => _x( 'Topics', 'taxonomy general name' ),
-			'singular_name' => _x( 'Topic', 'taxonomy singular name' ),
+			'name' => __( 'Topics', 'taxonomy general name' ),
+			'singular_name' => __( 'Topic', 'taxonomy singular name' ),
 			'search_items' =>  __( 'Topic' ),
 			'all_items' => __( 'All Topics' ),
 			'parent_item' => __( 'Parent Topic' ),
@@ -261,8 +261,8 @@ if ( ! function_exists( 'fs_add_sermons' ) ) {
 		
 		// "Bible Verses" Custom Taxonomy. Designates Bible verse for a particular sermon post.
 		$labels = array(
-			'name' => _x( 'Bible Verses', 'taxonomy general name' ),
-			'singular_name' => _x( 'Bible Verse', 'taxonomy singular name' ),
+			'name' => __( 'Bible Verses', 'taxonomy general name' ),
+			'singular_name' => __( 'Bible Verse', 'taxonomy singular name' ),
 			'search_items' =>  __( 'Bible Verse' ),
 			'all_items' => __( 'All Bible Verses' ),
 			'parent_item' => __( 'Parent Bible Verse' ),
