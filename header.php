@@ -1,6 +1,6 @@
 <?php
 /**
- * The Header for our theme.
+ * The Header for our theme
  *
  * @package WordPress
  * @subpackage Foursquare Two
@@ -29,13 +29,13 @@
     <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
 
     <!-- Fav and Touch Icons -->
-    <link rel="shortcut icon" href="/assets/images/favicon.ico">
-    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="/wp-content/themes/Foursquare_Two/assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/wp-content/themes/Foursquare_Two/assets/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/wp-content/themes/Foursquare_Two/assets/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/wp-content/themes/Foursquare_Two/assets/images/apple-touch-icon-114x114.png">
     
     <!-- Modernizr -->
-    <script src="<?php echo home_url( '/' ) ?>/wp-content/themes/Foursquare_Two/assets/js/modernizr.custom.js"></script>
+    <script src="<?php echo home_url( '/' ) ?>/wp-content/themes/Foursquare_Two/assets/js/modernizr.custom-min.js"></script>
     
     <!-- jQuery -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>

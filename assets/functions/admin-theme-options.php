@@ -181,7 +181,7 @@ function mytheme_add_init() {
 
 $file_dir=get_bloginfo('template_directory');
 wp_enqueue_style("functions", $file_dir."/assets/functions/functions.css", false, "1.0", "all");
-wp_enqueue_script("rm_script", $file_dir."/assets/js/admin-rm-script.js", false, "1.0");
+wp_enqueue_script("rm_script", $file_dir."/assets/js/admin-rm-script-min.js", false, "1.0");
 
 }
 function mytheme_admin() {

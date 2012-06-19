@@ -58,10 +58,10 @@
 
 <!-- JAVASCRIPT (located at page bottom for fast load)
 *********************************************************************** -->
-<script src="<?php echo home_url( '/' ) ?>/wp-content/themes/Foursquare_Two/assets/js/bootstrap-collapse.js"></script>
-<script src="<?php echo home_url( '/' ) ?>/wp-content/themes/Foursquare_Two/assets/js/bootstrap-transition.js"></script>
-<script src="<?php echo home_url( '/' ) ?>/wp-content/themes/Foursquare_Two/assets/js/bootstrap-modal.js"></script>
-<script src="<?php echo home_url( '/' ) ?>/wp-content/themes/Foursquare_Two/assets/js/bootstrap-dropdown.js"></script>
+<script src="<?php echo home_url( '/' ) ?>/wp-content/themes/Foursquare_Two/assets/js/bootstrap-collapse-min.js"></script>
+<script src="<?php echo home_url( '/' ) ?>/wp-content/themes/Foursquare_Two/assets/js/bootstrap-transition-min.js"></script>
+<script src="<?php echo home_url( '/' ) ?>/wp-content/themes/Foursquare_Two/assets/js/bootstrap-modal-min.js"></script>
+<script src="<?php echo home_url( '/' ) ?>/wp-content/themes/Foursquare_Two/assets/js/bootstrap-dropdown-min.js"></script>
 
 <!-- Video.js: http://videojs.com/ -->
 <script src="http://vjs.zencdn.net/c/video.js"></script>
