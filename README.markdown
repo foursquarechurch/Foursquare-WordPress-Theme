@@ -96,6 +96,7 @@ As previously mentioned, this theme includes a few plugins that are integral to 
 
 * [Contact Form 7](http://contactform7.com/)
 * [The Events Calendar](http://wordpress.org/extend/plugins/the-events-calendar/)
+* [WordPress GZip Compression](http://wordpress.org/extend/plugins/wordpress-gzip-compression/)
 
 In addition, this theme includes two custom plugins:
 
