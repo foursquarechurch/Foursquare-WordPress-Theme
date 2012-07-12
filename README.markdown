@@ -1,12 +1,10 @@
 # Foursquare WordPress Theme
 
-*Please note this is in beta release and is still baking. More updates to come.*
-
 This is a WordPress theme built by The Foursquare Church for local Foursquare churches to provide them with an out-of-the-box solution for creating a website. 
 
 Special hat tip to the team at Twitter for creating [Bootstrap](http://twitter.github.com/bootstrap), a framework this theme relies on for its functionality. 
 
-Demo: http://foursquare.bethouawesome.com
+Demo: http://wordpress.foursquare.org
 
 ## Installation & Basic Setup
 
