@@ -49,7 +49,7 @@ get_header(); ?>
 						<?php } // End check for facebook ?>
 						<?php if ( get_post_meta($post->ID, "_twitter", true) ) { ?>
 						<div class="twitter">
-							<p><a href="http://twitter.com/<?php echo get_post_meta($post->ID, "_twitter", true); ?>" target="_black">@<?php echo get_post_meta($post->ID, "_twitter", true); ?></a></p>
+							<p><a href="http://twitter.com/<?php echo get_post_meta($post->ID, "_twitter", true); ?>" target="_blank">@<?php echo get_post_meta($post->ID, "_twitter", true); ?></a></p>
 							<?php } // End check for twitter ?>
 						</div><!--end twitter-->
 					</div><!--end col2-->
