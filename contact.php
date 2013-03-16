@@ -18,12 +18,12 @@ get_header(); ?>
 			<hr />
 			<?php the_content(); ?>
 			<hr />
-			<?php echo do_shortcode("[contact-form-7 id='64' 'title='Contact form 1']"); ?>
+			<?php echo do_shortcode("[contact-form-7 id='4' 'title='Contact form 1']"); ?>
 	
 			<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'twentyten' ), 'after' => '' ) ); ?>
 		<?php endwhile; ?>
 	</section><!--End page-->
-	<?php include ('sidebar-about.php'); ?>
+	<?php include ('sidebar-contact.php'); ?>
 </div><!--End row-->
 
 <?php include ('sidebar-footer.php'); ?>
