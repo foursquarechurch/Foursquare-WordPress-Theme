@@ -11,7 +11,7 @@ get_header(); ?>
 
 <div class="row">
 	<section id="blog" class="span7">
-		<h5><?php printf( __( 'All posts filed under: %s', 'twentyten' ), '' . single_cat_title( '', false ) . '' );?></h5>
+		<h1><?php printf( __( '%s', 'twentyten' ), '' . single_cat_title( '', false ) . '' );?></h1>
     	<hr />
 		<?php
 		$category_description = category_description();
@@ -30,11 +30,12 @@ get_header(); ?>
 				<a href="<?php the_permalink(); ?>"><span class="featured-image alignleft"><?php echo get_the_post_thumbnail( $id, 'thumbnail' ); ?></span></a>
 				<?php endif;?>
     		
-    		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-    		<h2><small>Posted in: &nbsp;<a href="<?php bloginfo('url'); ?>/category/<?php $category = get_the_category(); echo $category[0]->category_nicename; ?>" title="<?php echo $category[0]->category_nicename; ?>"><?php $category = get_the_category(); echo $category[0]->cat_name;?></a></small></h2>
+    		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    		<h3><small>Posted in: &nbsp;<a href="<?php bloginfo('url'); ?>/category/<?php $category = get_the_category(); echo $category[0]->category_nicename; ?>" title="<?php echo $category[0]->category_nicename; ?>"><?php $category = get_the_category(); echo $category[0]->cat_name;?></a></small></h3>
     		<?php the_excerpt(); ?>
-       		<hr />
-       	</article><!--end post-->
+       	</article>
+            <hr class="clearboth"/>
+            <!--end post-->
 		<?php endwhile; ?>
 	
 		<?php /* Display pagination */ ?>
